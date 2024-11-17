@@ -1,0 +1,38 @@
+body {
+    background: #000;
+}
+
+.box{
+    justify-content: center;
+}
+.box .response {
+    border-color: aliceblue;
+    height: 75vh;
+    width: 50vh;
+    margin: 10px ;
+    padding: 20px;
+    background-color: #cd121200;
+}
+
+.box .prompt {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    margin: 1rem;
+    padding: 0.5rem;
+    display: flex;
+}
+
+.box .prompt input {
+    width: 90%;
+    padding: 0.5rem;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.box .prompt button {
+    color: black;
+    background-color: white;    
+}
