@@ -30,7 +30,6 @@ app.post("/api/chat", async (req, res) => {
     const data = result.response.text();
     const mainData = data.replace(/(\*\*|\#)/, "\n");
     const filteredText = mainData.replace(/(\*\*|\*)/g, "");
-    console.log(filteredText)
     res.json(filteredText);
   } catch (error) {
     if (error.message === "[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: fetch failed") {
